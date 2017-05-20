@@ -1,0 +1,210 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{CD84AB5E-5CA4-427C-AC0E-8115A3601C15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>MemeFryer</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\00\fb3595acf3e310917f21ae3dcc9f64a7816793" />
+    <None Include=".git\objects\04\d3071f2dbca184823f5c84b6ee24d8391545af" />
+    <None Include=".git\objects\0f\f589c2a804679c8c76de86423b3dad4758bbd1" />
+    <None Include=".git\objects\11\11896e8a96703e11c9d58d5109004ca3733dee" />
+    <None Include=".git\objects\12\fc23b503fbe04dad33e4b77d7aec463ce3d3b6" />
+    <None Include=".git\objects\19\d141d0e89c39eaf0418c02be8f656bf4a3aa8d" />
+    <None Include=".git\objects\2b\95bf2c2f008325afa50afe54aac96c9f034cd4" />
+    <None Include=".git\objects\2b\a2820cfd76b1311baf82e06e7ac2bfdbb83727" />
+    <None Include=".git\objects\2e\4147a4fce46880e52011e35075f5b5c22edb02" />
+    <None Include=".git\objects\34\454ff8fecfca10279c3cfd837d1053095adc6c" />
+    <None Include=".git\objects\34\7cb9f1ad899bbdbf0dd937ef9501dc286d965c" />
+    <None Include=".git\objects\37\7606d7354cf346ff26483a89e8680db95cd7e6" />
+    <None Include=".git\objects\38\ec74ce302ae278ed5bedc7c6eb0ac24c1757cb" />
+    <None Include=".git\objects\39\645652af62950ebf3b28ec3a5400dcec30b1c4" />
+    <None Include=".git\objects\3c\8248cf7b6ce136e27c9dcb4b3469256ff0af3d" />
+    <None Include=".git\objects\42\22430c1c6f68e1f7532d89e0de6e7bf57abf79" />
+    <None Include=".git\objects\44\75b2b2f03a29014cc38f4f3713c012dbfd977d" />
+    <None Include=".git\objects\48\4ae9c0b4873d34b6e834b43cd2f2a21a8ababe" />
+    <None Include=".git\objects\48\c335bcdcff63ee1366af0d16850f725ed12ab1" />
+    <None Include=".git\objects\49\604a2ce1676b80168bd4863cb5e6a900128c82" />
+    <None Include=".git\objects\4e\007610d905bd04d2779c5eed42baf4882da8d9" />
+    <None Include=".git\objects\52\0ed04acaafcbe40855de54b8f46966d5351a8d" />
+    <None Include=".git\objects\56\61bf7908161e06e457218630d79f562737dc4d" />
+    <None Include=".git\objects\57\06c4c5b08bf6163b708ab9c0db8c20e5e7109a" />
+    <None Include=".git\objects\58\01b74161d48c490332a7f8fd5ae55c1656072a" />
+    <None Include=".git\objects\5d\54bcca0a265585cdb585084200e9fb9d728375" />
+    <None Include=".git\objects\5e\c7fc4355d1bbdcf613352da06c44f28a5c750f" />
+    <None Include=".git\objects\67\e040225c7a94dac2dcdaf06447bebc6b6f2f1a" />
+    <None Include=".git\objects\68\ea29cfa2aaa1f7b08373ac8e7a2087e11c54f0" />
+    <None Include=".git\objects\77\179b4eb4da785340625c493c35d9c6e1e0810e" />
+    <None Include=".git\objects\7b\ba160b59cfd2d851cf0277ebc52a2b7a5bfe60" />
+    <None Include=".git\objects\85\abac1d0bc06406a128cbb3690d3f14a9e7214e" />
+    <None Include=".git\objects\86\60a86fb3688660528f506d721784ef883a4f30" />
+    <None Include=".git\objects\86\af40a8e370d0f8af4d3cc8d0bc0175514ca4c8" />
+    <None Include=".git\objects\88\3f4ab379e96183f532d595cb40e227a53bfa1a" />
+    <None Include=".git\objects\88\fa4027bda397de6bf19f0940e5dd6026c877f9" />
+    <None Include=".git\objects\8c\da6b5a6740b96bee9abd615d9c75d51e85e9c2" />
+    <None Include=".git\objects\92\4b8b179d3dd8a80ac973d93903af787ebffe12" />
+    <None Include=".git\objects\95\3ee005811c2f8ba8529e4c79c3d41f1686a4e9" />
+    <None Include=".git\objects\96\aacb98653b9d4cf6f737512889a34c98d067d8" />
+    <None Include=".git\objects\97\433bd8049c42e67f4854055b51ecfeadc12bbf" />
+    <None Include=".git\objects\99\bf0ad6c09e9981d8907d7223a7fe3a3d28552b" />
+    <None Include=".git\objects\9b\7f846304f1d2a9af5c144bf2141450765fd954" />
+    <None Include=".git\objects\a5\52adedc5b611c0ca528baa467251c9d883a073" />
+    <None Include=".git\objects\a7\fbd5f95c347c3712b612a5d7b06060e61966fa" />
+    <None Include=".git\objects\b7\04e6cea270b01c75e4dcb458bd931dc33958ee" />
+    <None Include=".git\objects\b9\1ab4a386f78672fa59d4b2b9ef4eee2c20aa83" />
+    <None Include=".git\objects\ba\f79a5ac5620ffed678ab42e91caab9e2f73e14" />
+    <None Include=".git\objects\bd\b0cabc87cf50106df6e15097dff816c8c3eb34" />
+    <None Include=".git\objects\be\a069bfcc09bc5dd8dedd7a8a69134b12106cc9" />
+    <None Include=".git\objects\c5\ba4fe0887549c401edb513763cf25b3a1dbcf4" />
+    <None Include=".git\objects\cb\4813c8be5885b5d52054af9ff7fa43f300a240" />
+    <None Include=".git\objects\cd\2946ad76b4402e5b3cab9243a9281aad228670" />
+    <None Include=".git\objects\ce\382b8b8f998cd65c68ad4254259e6d2c3ec785" />
+    <None Include=".git\objects\d0\a9ae0b41f4ffe39e0e4e8e6dca2cd4f6568024" />
+    <None Include=".git\objects\d3\765d21bf88499554fd570342b3c997466c0937" />
+    <None Include=".git\objects\d4\4ccc664d08f5a683629c94e1b28085573b4c26" />
+    <None Include=".git\objects\d4\c31d45eda548dd5a0ad6a01ef0fd00cb554ebe" />
+    <None Include=".git\objects\d4\d2a6c850467d77b157de57f4f1c344b227f022" />
+    <None Include=".git\objects\dd\6a29bc8566e23b356c85117d30f54e1f5bbeb2" />
+    <None Include=".git\objects\df\085bf30fa5f9c1af3d184dbe01c2a2dc3e906e" />
+    <None Include=".git\objects\df\72379f8b30520c6607dd3512135079cc98c0c7" />
+    <None Include=".git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include=".git\objects\ed\9bf9c451a61d3399510bf44cbaa9458aceecaf" />
+    <None Include=".git\objects\ee\a38450ffea5be6efe2d28fb8897c7c47a24a87" />
+    <None Include=".git\objects\f3\553448358e0488c3e03131f1e7e59d171068d2" />
+    <None Include=".git\objects\f6\b18eabd1895a7210e85f39794b646b145fb425" />
+    <None Include=".git\objects\f8\b4888565caadc7510be75682268d6c18edd6de" />
+    <None Include=".git\objects\fc\9bdeba439918dc8ae62b5ef32a0a32ec892c1b" />
+    <None Include=".git\objects\fe\38052a85ed460ddd703c9a7121aec22b1d5cc3" />
+    <None Include=".git\objects\fe\4c86427f428464fdd6cc4dccde3e0aa0583717" />
+    <None Include=".git\objects\ff\074062557f043dc7ba0ff13173ecf8212363ca" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\MemeFryer2\v15\.suo" />
+    <None Include=".vs\MemeFryer\v15\.suo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="MemeFryer\App.config" />
+    <None Include="MemeFryer\bin\Debug\MemeFryer.exe.config" />
+    <None Include="MemeFryer\bin\Release\MemeFryer.exe.config" />
+    <None Include="MemeFryer\obj\Debug\CoreCompileInputs.cache" />
+    <None Include="MemeFryer\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="MemeFryer\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="MemeFryer\obj\Debug\MemeFryer.csproj.GenerateResource.Cache" />
+    <None Include="MemeFryer\obj\Debug\MemeFryer.csprojResolveAssemblyReference.cache" />
+    <None Include="MemeFryer\obj\Release\CoreCompileInputs.cache" />
+    <None Include="MemeFryer\obj\Release\MemeFryer.csproj.GenerateResource.Cache" />
+    <None Include="MemeFryer\obj\Release\MemeFryer.csprojResolveAssemblyReference.cache" />
+    <None Include="MemeFryer\Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MemeFryer\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemeFryer\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemeFryer\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="MemeFryer\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="MemeFryer\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="MemeFryer\Program.cs" />
+    <Compile Include="MemeFryer\Properties\AssemblyInfo.cs" />
+    <Compile Include="MemeFryer\Properties\Resources.Designer.cs" />
+    <Compile Include="MemeFryer\Properties\Settings.Designer.cs" />
+    <Compile Include="MemeFryer\RGBHSL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MemeFryer\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemeFryer\obj\Debug\MemeFryer.frm_main.resources" />
+    <EmbeddedResource Include="MemeFryer\obj\Debug\MemeFryer.Properties.Resources.resources" />
+    <EmbeddedResource Include="MemeFryer\obj\Release\MemeFryer.frm_main.resources" />
+    <EmbeddedResource Include="MemeFryer\obj\Release\MemeFryer.Properties.Resources.resources" />
+    <EmbeddedResource Include="MemeFryer\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MemeFryer\bin\Debug\MemeFryer.exe" />
+    <Content Include="MemeFryer\bin\Debug\MemeFryer.pdb" />
+    <Content Include="MemeFryer\bin\Release\MemeFryer.exe" />
+    <Content Include="MemeFryer\bin\Release\MemeFryer.pdb" />
+    <Content Include="MemeFryer\MemeFryer.csproj" />
+    <Content Include="MemeFryer\obj\Debug\MemeFryer.csproj.FileListAbsolute.txt" />
+    <Content Include="MemeFryer\obj\Debug\MemeFryer.exe" />
+    <Content Include="MemeFryer\obj\Debug\MemeFryer.pdb" />
+    <Content Include="MemeFryer\obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="MemeFryer\obj\Release\MemeFryer.csproj.FileListAbsolute.txt" />
+    <Content Include="MemeFryer\obj\Release\MemeFryer.exe" />
+    <Content Include="MemeFryer\obj\Release\MemeFryer.pdb" />
+    <Content Include="MemeFryer\Resources\b.png" />
+    <Content Include="MemeFryer\Resources\vwfeat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
