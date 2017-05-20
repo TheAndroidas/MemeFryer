@@ -1,0 +1,9 @@
+C:\Users\mainframe\Source\Repos\MemeFryer\MemeFryer\bin\Release\MemeFryer.exe.config
+C:\Users\mainframe\Source\Repos\MemeFryer\MemeFryer\bin\Release\MemeFryer.exe
+C:\Users\mainframe\Source\Repos\MemeFryer\MemeFryer\bin\Release\MemeFryer.pdb
+C:\Users\mainframe\Source\Repos\MemeFryer\MemeFryer\obj\Release\MemeFryer.csprojResolveAssemblyReference.cache
+C:\Users\mainframe\Source\Repos\MemeFryer\MemeFryer\obj\Release\MemeFryer.frm_main.resources
+C:\Users\mainframe\Source\Repos\MemeFryer\MemeFryer\obj\Release\MemeFryer.Properties.Resources.resources
+C:\Users\mainframe\Source\Repos\MemeFryer\MemeFryer\obj\Release\MemeFryer.csproj.GenerateResource.Cache
+C:\Users\mainframe\Source\Repos\MemeFryer\MemeFryer\obj\Release\MemeFryer.exe
+C:\Users\mainframe\Source\Repos\MemeFryer\MemeFryer\obj\Release\MemeFryer.pdb

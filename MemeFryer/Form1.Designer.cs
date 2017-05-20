@@ -38,7 +38,13 @@
             this.pbx_maymay = new System.Windows.Forms.PictureBox();
             this.ofd_main = new System.Windows.Forms.OpenFileDialog();
             this.sfd_main = new System.Windows.Forms.SaveFileDialog();
+            this.tbr_temperature = new System.Windows.Forms.TrackBar();
+            this.lbl_off = new System.Windows.Forms.Label();
+            this.lbl_69deg = new System.Windows.Forms.Label();
+            this.lbl_level3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_maymay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbr_temperature)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_load
@@ -80,12 +86,13 @@
             // 
             // btn_savememe
             // 
-            this.btn_savememe.Location = new System.Drawing.Point(12, 220);
+            this.btn_savememe.Location = new System.Drawing.Point(12, 307);
             this.btn_savememe.Name = "btn_savememe";
             this.btn_savememe.Size = new System.Drawing.Size(205, 23);
             this.btn_savememe.TabIndex = 5;
             this.btn_savememe.Text = "Save Meme";
             this.btn_savememe.UseVisualStyleBackColor = true;
+            this.btn_savememe.Click += new System.EventHandler(this.btn_savememe_Click);
             // 
             // lbl_goodshit
             // 
@@ -106,11 +113,72 @@
             this.pbx_maymay.TabIndex = 0;
             this.pbx_maymay.TabStop = false;
             // 
+            // ofd_main
+            // 
+            this.ofd_main.Filter = "GIF (is it Gif or Jif?)|*.gif|JPEG (needs more)|*.jpeg|JPG|*.jpg|PNG (the one tru" +
+    "e format)|*.png";
+            // 
+            // sfd_main
+            // 
+            this.sfd_main.DefaultExt = "PNG";
+            this.sfd_main.Filter = "PNG files|*.png";
+            // 
+            // tbr_temperature
+            // 
+            this.tbr_temperature.Location = new System.Drawing.Point(12, 220);
+            this.tbr_temperature.Maximum = 4;
+            this.tbr_temperature.Minimum = 1;
+            this.tbr_temperature.Name = "tbr_temperature";
+            this.tbr_temperature.Size = new System.Drawing.Size(205, 45);
+            this.tbr_temperature.TabIndex = 7;
+            this.tbr_temperature.Value = 1;
+            // 
+            // lbl_off
+            // 
+            this.lbl_off.AutoSize = true;
+            this.lbl_off.Location = new System.Drawing.Point(17, 252);
+            this.lbl_off.Name = "lbl_off";
+            this.lbl_off.Size = new System.Drawing.Size(21, 13);
+            this.lbl_off.TabIndex = 8;
+            this.lbl_off.Text = "Off";
+            // 
+            // lbl_69deg
+            // 
+            this.lbl_69deg.AutoSize = true;
+            this.lbl_69deg.Location = new System.Drawing.Point(69, 252);
+            this.lbl_69deg.Name = "lbl_69deg";
+            this.lbl_69deg.Size = new System.Drawing.Size(33, 13);
+            this.lbl_69deg.TabIndex = 9;
+            this.lbl_69deg.Text = "69° C";
+            // 
+            // lbl_level3
+            // 
+            this.lbl_level3.AutoSize = true;
+            this.lbl_level3.Location = new System.Drawing.Point(130, 252);
+            this.lbl_level3.Name = "lbl_level3";
+            this.lbl_level3.Size = new System.Drawing.Size(30, 26);
+            this.lbl_level3.TabIndex = 10;
+            this.lbl_level3.Text = "extra\r\nthicc";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(182, 252);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "420 °🅱️";
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 694);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_level3);
+            this.Controls.Add(this.lbl_69deg);
+            this.Controls.Add(this.lbl_off);
+            this.Controls.Add(this.tbr_temperature);
             this.Controls.Add(this.lbl_goodshit);
             this.Controls.Add(this.btn_savememe);
             this.Controls.Add(this.btn_fry);
@@ -123,6 +191,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Androidas\' Meme Fryer!";
             ((System.ComponentModel.ISupportInitialize)(this.pbx_maymay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbr_temperature)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,6 +208,11 @@
         private System.Windows.Forms.Label lbl_goodshit;
         private System.Windows.Forms.OpenFileDialog ofd_main;
         private System.Windows.Forms.SaveFileDialog sfd_main;
+        private System.Windows.Forms.TrackBar tbr_temperature;
+        private System.Windows.Forms.Label lbl_off;
+        private System.Windows.Forms.Label lbl_69deg;
+        private System.Windows.Forms.Label lbl_level3;
+        private System.Windows.Forms.Label label1;
     }
 }
 

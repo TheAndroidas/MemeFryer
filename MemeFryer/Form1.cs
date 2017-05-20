@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using xRay.Toolkit.Utilities;
 
 namespace MemeFryer
 {
@@ -21,6 +23,7 @@ namespace MemeFryer
         Bitmap memebmp = Properties.Resources.b;
         Color oldColor = new Color();
         Color newColor = new Color();
+        RGBHSL rgbhsl = new RGBHSL();
 
         private void btn_load_Click(object sender, EventArgs e)
         {
@@ -46,11 +49,27 @@ namespace MemeFryer
                 for (int i = 0; i < meme.Width; i++)
                 {
                     oldColor = memebmp.GetPixel(i, j);
-                    newColor = oldColor + RGBHSL;
+                    newColor = RGBHSL.ModifySaturation(oldColor, Convert.ToDouble(tbr_temperature.Value));
                     memebmp.SetPixel(i, j, newColor);
 
                 }
             }
+            pbx_maymay.Image = memebmp;
+        }
+
+        private void btn_savememe_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sfd_main.ShowDialog();
+                pbx_maymay.Image.Save(sfd_main.FileName, ImageFormat.Png);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "oh shit ni🅱️🅱️a");
+            }
+
         }
     }
 }
